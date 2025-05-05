@@ -8,6 +8,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/components/ui/use-toast";
+import { Apple, Play } from "lucide-react";
 
 const Registration = () => {
   const { toast } = useToast();
@@ -240,6 +241,69 @@ const Registration = () => {
               <p className="text-gray-600">
                 Already have an account? <a href="#" className="text-brand-primary font-medium">Sign In</a>
               </p>
+            </div>
+            
+            {/* App Download Section */}
+            <div className="mt-12 bg-white p-8 rounded-lg shadow-md">
+              <div className="text-center mb-6">
+                <h2 className="text-2xl font-bold text-brand-secondary mb-2">Download Our App</h2>
+                <p className="text-gray-600">Get the JOB MATCHY Nepal experience on your mobile device</p>
+              </div>
+              
+              <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+                {/* App Screenshot/Interface */}
+                <div className="w-full md:w-1/3 flex justify-center">
+                  <img 
+                    src="/placeholder.svg" 
+                    alt="JOB MATCHY Nepal App Interface" 
+                    className="h-72 object-contain rounded-xl shadow-lg border border-gray-200" 
+                  />
+                </div>
+                
+                <div className="w-full md:w-2/3 space-y-6">
+                  {/* Company Logo */}
+                  <div className="flex justify-center">
+                    <img 
+                      src="/placeholder.svg" 
+                      alt="JOB MATCHY Nepal Logo" 
+                      className="h-16 object-contain" 
+                    />
+                  </div>
+                  
+                  {/* App Store Links */}
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a 
+                      href="https://play.google.com/store/apps/details?id=com.jobmatchynepal&pcampaignid=web_share" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors"
+                    >
+                      <Play size={24} />
+                      <div className="text-left">
+                        <div className="text-xs">Get it on</div>
+                        <div className="text-sm font-bold">Google Play</div>
+                      </div>
+                    </a>
+                    
+                    <a 
+                      href="https://apps.apple.com/np/app/jobmatchy-nepal/id6504403413" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors"
+                    >
+                      <Apple size={24} />
+                      <div className="text-left">
+                        <div className="text-xs">Download on the</div>
+                        <div className="text-sm font-bold">App Store</div>
+                      </div>
+                    </a>
+                  </div>
+                  
+                  <p className="text-center text-sm text-gray-500">
+                    Experience faster job matching and seamless connections with our mobile app
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
