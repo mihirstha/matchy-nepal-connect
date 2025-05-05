@@ -28,8 +28,8 @@ const Hero = () => {
               <div className="w-64 h-64 md:w-80 md:h-80 bg-brand-primary rounded-full opacity-20 absolute -top-5 -left-5"></div>
               <div className="relative z-10 animate-bounce-slow">
                 <img 
-                  src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" 
-                  alt="Job Matching" 
+                  src="/lovable-uploads/00328f56-13a6-436b-9b70-e5b499ea8dc7.png" 
+                  alt="JOB MATCHY App Interface" 
                   className="w-full max-w-md rounded-lg shadow-xl"
                 />
               </div>
