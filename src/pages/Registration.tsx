@@ -35,9 +35,9 @@ const Registration = () => {
                   {/* Company Logo */}
                   <div className="flex justify-center">
                     <img 
-                      src="/placeholder.svg" 
+                      src="/lovable-uploads/d978bd2d-7078-4927-8710-799f46e4a964.png" 
                       alt="JOB MATCHY Nepal Logo" 
-                      className="h-16 object-contain" 
+                      className="h-20 object-contain" 
                     />
                   </div>
                   

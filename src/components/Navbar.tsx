@@ -15,9 +15,11 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           <Link to="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-bold text-brand-secondary">
-              JOB MATCHY <span className="text-brand-primary">NEPAL</span>
-            </span>
+            <img 
+              src="/lovable-uploads/d978bd2d-7078-4927-8710-799f46e4a964.png" 
+              alt="JOB MATCHY NEPAL Logo" 
+              className="h-10 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
