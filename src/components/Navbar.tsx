@@ -1,13 +1,18 @@
 
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Briefcase, LogIn, UserPlus } from "lucide-react";
+import { Button } from "./ui/button";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const redirectToEmployerHub = () => {
+    window.location.href = "https://job-matchy-employer-hub.lovable.app/jobs";
   };
 
   return (
@@ -39,6 +44,9 @@ const Navbar = () => {
             <Link to="/contact" className="font-medium text-gray-700 hover:text-brand-primary transition-colors">
               Contact
             </Link>
+            <Link to="/pricing" className="font-medium text-gray-700 hover:text-brand-primary transition-colors">
+              Pricing
+            </Link>
             <div className="relative group">
               <button className="font-medium text-gray-700 hover:text-brand-primary transition-colors flex items-center">
                 More
@@ -52,6 +60,34 @@ const Navbar = () => {
                 </Link>
               </div>
             </div>
+          </div>
+
+          {/* Action Buttons */}
+          <div className="hidden md:flex items-center space-x-4">
+            <Button 
+              onClick={redirectToEmployerHub} 
+              variant="outline" 
+              className="flex items-center gap-2"
+            >
+              <Briefcase size={18} />
+              Post a Job
+            </Button>
+
+            <div className="border-l border-gray-300 h-8 mx-2" />
+
+            <Link to="/login">
+              <Button variant="outline" size="sm" className="flex items-center gap-1">
+                <LogIn size={16} />
+                Sign In
+              </Button>
+            </Link>
+            
+            <Link to="/signup">
+              <Button variant="default" size="sm" className="flex items-center gap-1">
+                <UserPlus size={16} />
+                Sign Up
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -81,12 +117,39 @@ const Navbar = () => {
               <Link to="/contact" className="font-medium text-gray-700 py-2 hover:text-brand-primary transition-colors" onClick={toggleMenu}>
                 Contact
               </Link>
+              <Link to="/pricing" className="font-medium text-gray-700 py-2 hover:text-brand-primary transition-colors" onClick={toggleMenu}>
+                Pricing
+              </Link>
               <Link to="/terms" className="font-medium text-gray-700 py-2 hover:text-brand-primary transition-colors" onClick={toggleMenu}>
                 Terms of Service
               </Link>
               <Link to="/privacy" className="font-medium text-gray-700 py-2 hover:text-brand-primary transition-colors" onClick={toggleMenu}>
                 Privacy Policy
               </Link>
+              
+              <div className="pt-2 border-t border-gray-200 my-2">
+                <button 
+                  onClick={redirectToEmployerHub} 
+                  className="w-full text-left font-medium text-brand-primary py-2 flex items-center gap-2"
+                >
+                  <Briefcase size={18} />
+                  Post a Job
+                </button>
+                
+                <Link to="/login" className="block font-medium text-gray-700 py-2 hover:text-brand-primary transition-colors" onClick={toggleMenu}>
+                  <div className="flex items-center gap-2">
+                    <LogIn size={18} />
+                    Sign In
+                  </div>
+                </Link>
+                
+                <Link to="/signup" className="block font-medium text-gray-700 py-2 hover:text-brand-primary transition-colors" onClick={toggleMenu}>
+                  <div className="flex items-center gap-2">
+                    <UserPlus size={18} />
+                    Sign Up
+                  </div>
+                </Link>
+              </div>
             </div>
           </div>
         )}
