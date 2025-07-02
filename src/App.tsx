@@ -18,6 +18,7 @@ import EmployerRegistration from "./pages/EmployerRegistration";
 import Pricing from "./pages/Pricing";
 import About from "./pages/About";
 import Blogs from "./pages/Blogs";
+import WhyJobMatchy from "./pages/WhyJobMatchy";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +30,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/why-job-matchy" element={<WhyJobMatchy />} />
           <Route path="/registration" element={<Registration />} />
           <Route path="/services" element={<Services />} />
           <Route path="/faq" element={<FAQ />} />

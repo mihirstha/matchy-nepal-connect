@@ -96,7 +96,7 @@ const Registration = () => {
           </div>
 
           {/* Employer Pricing Section */}
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-brand-secondary mb-3">
                 Employer Plans
@@ -106,135 +106,122 @@ const Registration = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8">
-              {/* Basic Plan */}
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Normal Posting Plan */}
               <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 transition-transform hover:transform hover:scale-105">
                 <div className="p-6 bg-gray-50">
-                  <h3 className="text-xl font-bold text-brand-secondary mb-2">Basic</h3>
+                  <h3 className="text-2xl font-bold text-brand-secondary mb-2">Normal Posting</h3>
                   <div className="flex items-end gap-1 mb-4">
-                    <span className="text-4xl font-bold">NPR 1,999</span>
-                    <span className="text-gray-600">/month</span>
+                    <span className="text-4xl font-bold">Rs 3,000</span>
+                    <span className="text-gray-600">/job post</span>
                   </div>
-                  <p className="text-sm text-gray-600">Perfect for small businesses</p>
+                  <p className="text-sm text-gray-600">Standard job posting solution</p>
                 </div>
 
                 <div className="p-6">
-                  <ul className="space-y-3 mb-8">
-                    <li className="flex items-start gap-2">
+                  <ul className="space-y-4 mb-8">
+                    <li className="flex items-start gap-3">
                       <CheckCircle2 className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
-                      <span>Post up to 5 jobs per month</span>
+                      <div>
+                        <span className="font-medium">15 Days Listing Duration</span>
+                        <p className="text-sm text-gray-600">Your job will be visible for 15 days</p>
+                      </div>
                     </li>
-                    <li className="flex items-start gap-2">
+                    <li className="flex items-start gap-3">
                       <CheckCircle2 className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
-                      <span>Access to basic candidate database</span>
+                      <div>
+                        <span className="font-medium">Standard Position</span>
+                        <p className="text-sm text-gray-600">Shown after "Urgent Hiring" section</p>
+                      </div>
                     </li>
-                    <li className="flex items-start gap-2">
+                    <li className="flex items-start gap-3">
                       <CheckCircle2 className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
-                      <span>Job visibility for 15 days</span>
+                      <div>
+                        <span className="font-medium">Video Resume Access</span>
+                        <p className="text-sm text-gray-600">View candidate video resumes</p>
+                      </div>
                     </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
-                      <span>Email support</span>
+                    <li className="flex items-start gap-3">
+                      <div className="h-5 w-5 border-2 border-gray-300 rounded shrink-0 mt-0.5"></div>
+                      <div>
+                        <span className="font-medium text-gray-400">No "Urgent Hiring" Tag</span>
+                        <p className="text-sm text-gray-400">Standard listing appearance</p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="h-5 w-5 border-2 border-gray-300 rounded shrink-0 mt-0.5"></div>
+                      <div>
+                        <span className="font-medium text-gray-400">No Boost Listing</span>
+                        <p className="text-sm text-gray-400">Standard visibility</p>
+                      </div>
                     </li>
                   </ul>
                   <Button 
                     className="w-full" 
-                    onClick={() => handleSelectPlan("Basic")}
+                    onClick={() => handleSelectPlan("Normal")}
                   >
-                    Select Plan
+                    Select Normal Posting
                   </Button>
                 </div>
               </div>
 
-              {/* Professional Plan */}
+              {/* Premium Posting Plan */}
               <div className="bg-white rounded-xl shadow-xl overflow-hidden border-2 border-brand-primary transform scale-105 relative">
                 <div className="absolute top-0 right-0 bg-brand-primary text-white py-1 px-4 text-sm font-bold rounded-bl-lg">
-                  POPULAR
+                  RECOMMENDED
                 </div>
                 <div className="p-6 bg-brand-light">
-                  <h3 className="text-xl font-bold text-brand-secondary mb-2">Professional</h3>
+                  <h3 className="text-2xl font-bold text-brand-secondary mb-2">Premium Posting</h3>
                   <div className="flex items-end gap-1 mb-4">
-                    <span className="text-4xl font-bold">NPR 4,999</span>
-                    <span className="text-gray-600">/month</span>
+                    <span className="text-4xl font-bold">Rs 5,000</span>
+                    <span className="text-gray-600">/job post</span>
                   </div>
-                  <p className="text-sm text-gray-600">Best for growing companies</p>
+                  <p className="text-sm text-gray-600">Enhanced visibility and features</p>
                 </div>
 
                 <div className="p-6">
-                  <ul className="space-y-3 mb-8">
-                    <li className="flex items-start gap-2">
+                  <ul className="space-y-4 mb-8">
+                    <li className="flex items-start gap-3">
                       <CheckCircle2 className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
-                      <span>Post up to 15 jobs per month</span>
+                      <div>
+                        <span className="font-medium">30 Days Listing Duration</span>
+                        <p className="text-sm text-gray-600">Extended visibility for 30 days</p>
+                      </div>
                     </li>
-                    <li className="flex items-start gap-2">
+                    <li className="flex items-start gap-3">
                       <CheckCircle2 className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
-                      <span>Advanced candidate filtering</span>
+                      <div>
+                        <span className="font-medium">"Urgent Hiring" Tag</span>
+                        <p className="text-sm text-gray-600">Priority placement with urgent tag</p>
+                      </div>
                     </li>
-                    <li className="flex items-start gap-2">
+                    <li className="flex items-start gap-3">
                       <CheckCircle2 className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
-                      <span>Job visibility for 30 days</span>
+                      <div>
+                        <span className="font-medium">Boost Listing</span>
+                        <p className="text-sm text-gray-600">Enhanced visibility and reach</p>
+                      </div>
                     </li>
-                    <li className="flex items-start gap-2">
+                    <li className="flex items-start gap-3">
                       <CheckCircle2 className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
-                      <span>Featured job placement</span>
+                      <div>
+                        <span className="font-medium">Video Resume Access</span>
+                        <p className="text-sm text-gray-600">View candidate video resumes</p>
+                      </div>
                     </li>
-                    <li className="flex items-start gap-2">
+                    <li className="flex items-start gap-3">
                       <CheckCircle2 className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
-                      <span>Priority email & phone support</span>
+                      <div>
+                        <span className="font-medium">Top Position on App</span>
+                        <p className="text-sm text-gray-600">Shown in "Urgent Hiring" section</p>
+                      </div>
                     </li>
                   </ul>
                   <Button 
                     className="w-full bg-brand-primary hover:bg-brand-secondary" 
-                    onClick={() => handleSelectPlan("Professional")}
+                    onClick={() => handleSelectPlan("Premium")}
                   >
-                    Select Plan
-                  </Button>
-                </div>
-              </div>
-
-              {/* Enterprise Plan */}
-              <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 transition-transform hover:transform hover:scale-105">
-                <div className="p-6 bg-gray-50">
-                  <h3 className="text-xl font-bold text-brand-secondary mb-2">Enterprise</h3>
-                  <div className="flex items-end gap-1 mb-4">
-                    <span className="text-4xl font-bold">NPR 9,999</span>
-                    <span className="text-gray-600">/month</span>
-                  </div>
-                  <p className="text-sm text-gray-600">For large organizations</p>
-                </div>
-
-                <div className="p-6">
-                  <ul className="space-y-3 mb-8">
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
-                      <span>Unlimited job postings</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
-                      <span>Full candidate database access</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
-                      <span>Job visibility for 60 days</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
-                      <span>Premium job placement</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
-                      <span>Dedicated account manager</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-5 w-5 text-green-500 shrink-0 mt-0.5" />
-                      <span>Custom recruitment solutions</span>
-                    </li>
-                  </ul>
-                  <Button 
-                    className="w-full" 
-                    onClick={() => handleSelectPlan("Enterprise")}
-                  >
-                    Select Plan
+                    Select Premium Posting
                   </Button>
                 </div>
               </div>

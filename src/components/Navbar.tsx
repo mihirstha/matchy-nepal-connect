@@ -32,6 +32,9 @@ const Navbar = () => {
             <Link to="/" className="font-medium text-gray-700 hover:text-brand-primary transition-colors">
               Home
             </Link>
+            <Link to="/why-job-matchy" className="font-medium text-gray-700 hover:text-brand-primary transition-colors">
+              Why Job Matchy
+            </Link>
             <Link to="/registration" className="font-medium text-gray-700 hover:text-brand-primary transition-colors">
               Registration
             </Link>
@@ -74,6 +77,9 @@ const Navbar = () => {
             <div className="flex flex-col space-y-3">
               <Link to="/" className="font-medium text-gray-700 py-2 hover:text-brand-primary transition-colors" onClick={toggleMenu}>
                 Home
+              </Link>
+              <Link to="/why-job-matchy" className="font-medium text-gray-700 py-2 hover:text-brand-primary transition-colors" onClick={toggleMenu}>
+                Why Job Matchy
               </Link>
               <Link to="/registration" className="font-medium text-gray-700 py-2 hover:text-brand-primary transition-colors" onClick={toggleMenu}>
                 Registration
