@@ -12,7 +12,8 @@ const Blogs = () => {
       author: "JOB MATCHY Team",
       date: "December 15, 2024",
       readTime: "5 min read",
-      category: "Career Tips"
+      category: "Career Tips",
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 2,
@@ -21,7 +22,8 @@ const Blogs = () => {
       author: "HR Expert",
       date: "December 10, 2024",
       readTime: "7 min read",
-      category: "Resume Building"
+      category: "Resume Building",
+      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 3,
@@ -30,7 +32,8 @@ const Blogs = () => {
       author: "Industry Analyst",
       date: "December 5, 2024",
       readTime: "6 min read",
-      category: "Industry Trends"
+      category: "Industry Trends",
+      image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 4,
@@ -39,7 +42,8 @@ const Blogs = () => {
       author: "Career Coach",
       date: "November 28, 2024",
       readTime: "10 min read",
-      category: "Interview Tips"
+      category: "Interview Tips",
+      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 5,
@@ -48,7 +52,8 @@ const Blogs = () => {
       author: "Market Research Team",
       date: "November 20, 2024",
       readTime: "8 min read",
-      category: "Market Insights"
+      category: "Market Insights",
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       id: 6,
@@ -57,7 +62,8 @@ const Blogs = () => {
       author: "Networking Expert",
       date: "November 15, 2024",
       readTime: "6 min read",
-      category: "Professional Development"
+      category: "Professional Development",
+      image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     }
   ];
 
@@ -104,6 +110,13 @@ const Blogs = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
               {blogPosts.map((post) => (
                 <article key={post.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                  <div className="aspect-video overflow-hidden">
+                    <img 
+                      src={post.image} 
+                      alt={post.title}
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
                   <div className="p-6">
                     <div className="flex items-center gap-2 mb-3">
                       <span className="px-3 py-1 bg-brand-light text-brand-primary text-sm font-medium rounded-full">
