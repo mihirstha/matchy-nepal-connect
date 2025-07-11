@@ -65,11 +65,11 @@ export default {
 				},
 				// Custom brand colors
 				brand: {
-					primary: '#56c1ff',
-					secondary: '#004d80',
-					light: '#d7f1ff',
-					dark: '#003459',
-					accent: '#ff9d4d'
+					primary: '#FFD700',
+					secondary: '#FFEB3B',
+					light: '#FFF9C4',
+					dark: '#FF6F00',
+					accent: '#FF9800'
 				}
 			},
 			borderRadius: {
@@ -110,7 +110,8 @@ export default {
 				'fade-in': 'fade-in 0.5s ease-out'
 			},
 			backgroundImage: {
-				'gradient-primary': 'linear-gradient(90deg, #56c1ff 0%, #004d80 100%)',
+				'gradient-primary': 'linear-gradient(135deg, #FFD700 0%, #FF9800 100%)',
+				'gradient-yellow': 'linear-gradient(135deg, #FFEB3B 0%, #FFD700 100%)',
 			}
 		}
 	},

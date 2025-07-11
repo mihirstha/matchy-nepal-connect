@@ -6,6 +6,7 @@ import Features from "@/components/Features";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import MissionVision from "@/components/MissionVision";
 import CTA from "@/components/CTA";
+import JobTypes from "@/components/JobTypes";
 
 const Index = () => {
   return (
@@ -13,6 +14,7 @@ const Index = () => {
       <Navbar />
       <main className="flex-grow">
         <Hero />
+        <JobTypes />
         <Features />
         <WhyChooseUs />
         <MissionVision />

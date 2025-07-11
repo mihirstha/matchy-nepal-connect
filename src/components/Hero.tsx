@@ -4,54 +4,78 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <div className="bg-gradient-to-b from-brand-light to-white">
-      <div className="container mx-auto px-4 py-16 md:py-24">
-        <div className="flex flex-col md:flex-row items-center">
-          <div className="md:w-1/2 mb-8 md:mb-0">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-secondary leading-tight mb-4">
-              <span className="text-brand-primary">Instantly Connect</span> with Jobs and Talent on JOB MATCHY!
-            </h1>
-            <p className="text-xl text-gray-700 mb-8">
-              Whether you're looking for a job or hiring, JOB MATCHY connects you instantly with the right opportunities and talent across Nepal.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/registration" className="btn-primary inline-block text-center">
-                Get Started
-              </Link>
-              <Link to="/services" className="btn-outline inline-block text-center">
-                Learn More
-              </Link>
+    <section className="relative bg-gradient-yellow py-20 md:py-32 overflow-hidden min-h-screen">
+      {/* Diagonal stripes pattern */}
+      <div className="absolute inset-0 opacity-10">
+        <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="stripes" patternUnits="userSpaceOnUse" width="20" height="20" patternTransform="rotate(45)">
+              <rect width="10" height="20" fill="white"/>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#stripes)"/>
+        </svg>
+      </div>
+      
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="flex flex-col lg:flex-row items-center gap-12 min-h-[70vh]">
+          <div className="flex-1 text-center lg:text-left">
+            <div className="bg-white/90 backdrop-blur-sm rounded-full px-6 py-2 inline-block mb-6">
+              <span className="text-sm font-semibold text-gray-800">\ कामको समीक्षा देख्न सकिन्छ! /</span>
             </div>
-          </div>
-          <div className="md:w-1/2 flex justify-center">
-            <div className="relative">
-              <div className="w-64 h-64 md:w-80 md:h-80 bg-brand-primary rounded-full opacity-20 absolute -top-5 -left-5"></div>
-              <div className="relative z-10 animate-bounce-slow">
+            
+            <div className="relative mb-8">
+              <div className="bg-white/20 backdrop-blur-sm rounded-3xl p-8 inline-block">
                 <img 
                   src="/lovable-uploads/00328f56-13a6-436b-9b70-e5b499ea8dc7.png" 
-                  alt="JOB MATCHY App Interface" 
-                  className="w-full max-w-md rounded-lg shadow-xl"
+                  alt="Job Matching App Interface" 
+                  className="w-64 h-auto mx-auto"
                 />
+                
+                {/* Floating text bubbles */}
+                <div className="absolute -top-4 -left-4 bg-white rounded-full px-4 py-2 shadow-lg">
+                  <span className="text-sm font-bold text-gray-800">पैसा तुरुन्तै जम्मा</span>
+                </div>
+                <div className="absolute top-1/2 -right-8 bg-white rounded-full px-4 py-2 shadow-lg">
+                  <span className="text-sm font-bold text-gray-800">त्यसै दिन आवेदन<br/>एकल ठीक!</span>
+                </div>
+                <div className="absolute bottom-4 -left-8 bg-white rounded-full px-4 py-2 shadow-lg">
+                  <span className="text-sm font-bold text-gray-800">अन्तर्वार्ता<br/>रिज्युमे नचाहिने</span>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <div className="mt-16 md:mt-24 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-brand-secondary mb-2">
-            Connecting Talent with Opportunity!
-          </h2>
-          <p className="text-gray-700 max-w-3xl mx-auto">
-            Looking for a job in Nepal or hiring top talent? JOB MATCHY Nepal is your go-to platform! Whether you're a job seeker or an employer, we connect talent with opportunity—anytime, anywhere.
-          </p>
-          <div className="mt-8">
-            <Link to="/services" className="inline-flex items-center text-brand-secondary font-medium hover:text-brand-primary transition-colors">
-              Discover our services <ArrowRight size={16} className="ml-2" />
+          
+          <div className="flex-1 text-center lg:text-left">
+            <div className="mb-6">
+              <div className="text-lg font-bold text-gray-700 mb-2">स्किम काम सेवा</div>
+              <div className="text-2xl font-bold text-gray-700 mb-4">जागिर पोस्ट संख्या※</div>
+              <div className="text-8xl md:text-9xl font-black text-gray-800 leading-none">No.1</div>
+            </div>
+            
+            <div className="flex flex-col gap-4 mb-8">
+              <a href="#" className="bg-gray-800 text-white px-6 py-3 rounded-lg flex items-center justify-center gap-2 hover:bg-gray-700 transition-colors">
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on App Store" className="h-10" />
+              </a>
+              <a href="#" className="bg-gray-800 text-white px-6 py-3 rounded-lg flex items-center justify-center gap-2 hover:bg-gray-700 transition-colors">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" className="h-10" />
+              </a>
+            </div>
+            
+            <Link to="/registration" className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg font-bold inline-block transition-colors">
+              जागिर पोस्ट नि:शुल्क! काम भर्तीको लागि यहाँ क्लिक गर्नुहोस्
             </Link>
           </div>
         </div>
+        
+        {/* Bottom disclaimer */}
+        <div className="mt-16 text-center text-sm text-gray-600">
+          ※२०२५ जुन अवधि_स्किम काम मा बजार अनुसन्धान<br/>
+          अनुसन्धान संस्था: नेपाल मार्केटिंग रिसर्च संघ<br/>
+          अनुसन्धान अवधि: २०२५ मे १३ देखि जुन १२ सम्म
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

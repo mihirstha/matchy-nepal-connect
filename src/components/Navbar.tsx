@@ -16,49 +16,33 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white shadow-md sticky top-0 z-50">
+    <nav className="bg-white shadow-sm sticky top-0 z-50">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           <Link to="/" className="flex items-center space-x-2">
-            <img 
-              src="/lovable-uploads/d978bd2d-7078-4927-8710-799f46e4a964.png" 
-              alt="JOB MATCHY NEPAL Logo" 
-              className="h-10 w-auto"
-            />
+            <div className="text-2xl font-bold text-gray-800">Job Matchy</div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-6">
-            <Link to="/" className="font-medium text-gray-700 hover:text-brand-primary transition-colors">
-              Home
+          <div className="hidden md:flex items-center space-x-8">
+            <Link to="/why-job-matchy" className="font-medium text-gray-700 hover:text-primary transition-colors">
+              スキマバイトマガジン
             </Link>
-            <Link to="/why-job-matchy" className="font-medium text-gray-700 hover:text-brand-primary transition-colors">
-              Why Job Matchy
-            </Link>
-            <Link to="/registration" className="font-medium text-gray-700 hover:text-brand-primary transition-colors">
-              Registration
-            </Link>
-            <Link to="/services" className="font-medium text-gray-700 hover:text-brand-primary transition-colors">
+            <Link to="/services" className="font-medium text-gray-700 hover:text-primary transition-colors">
               Services
             </Link>
-            <Link to="/pricing" className="font-medium text-gray-700 hover:text-brand-primary transition-colors">
-              Pricing
+            <Link to="/registration" className="bg-primary text-gray-800 px-6 py-2 rounded-full font-bold text-sm hover:bg-primary/90 transition-colors">
+              求人投稿無料！
             </Link>
           </div>
 
           {/* Action Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <Link to="/login">
-              <Button variant="outline" size="sm" className="flex items-center gap-1">
-                <LogIn size={16} />
-                Sign In
-              </Button>
-            </Link>
-            
             <Link to="/signup">
-              <Button variant="default" size="sm" className="flex items-center gap-1">
-                <UserPlus size={16} />
-                Sign Up
+              <Button className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-full font-bold">
+                求人投稿無料！
+                <br />
+                求人投稿はこちら
               </Button>
             </Link>
           </div>
