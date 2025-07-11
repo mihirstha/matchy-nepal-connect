@@ -21,26 +21,26 @@ const Hero = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12 min-h-[70vh]">
           <div className="flex-1 text-center lg:text-left">
             <div className="bg-white/90 backdrop-blur-sm rounded-full px-6 py-2 inline-block mb-6">
-              <span className="text-sm font-semibold text-gray-800">\ कामको समीक्षा देख्न सकिन्छ! /</span>
+              <span className="text-sm font-semibold text-gray-800">\ Job Reviews Available! /</span>
             </div>
             
             <div className="relative mb-8">
               <div className="bg-white/20 backdrop-blur-sm rounded-3xl p-8 inline-block">
                 <img 
-                  src="/lovable-uploads/00328f56-13a6-436b-9b70-e5b499ea8dc7.png" 
-                  alt="Job Matching App Interface" 
+                  src="/lovable-uploads/d978bd2d-7078-4927-8710-799f46e4a964.png" 
+                  alt="Job Matchy Mascot" 
                   className="w-64 h-auto mx-auto"
                 />
                 
                 {/* Floating text bubbles */}
                 <div className="absolute -top-4 -left-4 bg-white rounded-full px-4 py-2 shadow-lg">
-                  <span className="text-sm font-bold text-gray-800">पैसा तुरुन्तै जम्मा</span>
+                  <span className="text-sm font-bold text-gray-800">Instant Payment</span>
                 </div>
                 <div className="absolute top-1/2 -right-8 bg-white rounded-full px-4 py-2 shadow-lg">
-                  <span className="text-sm font-bold text-gray-800">त्यसै दिन आवेदन<br/>एकल ठीक!</span>
+                  <span className="text-sm font-bold text-gray-800">Same Day<br/>Application!</span>
                 </div>
                 <div className="absolute bottom-4 -left-8 bg-white rounded-full px-4 py-2 shadow-lg">
-                  <span className="text-sm font-bold text-gray-800">अन्तर्वार्ता<br/>रिज्युमे नचाहिने</span>
+                  <span className="text-sm font-bold text-gray-800">No Resume<br/>Required</span>
                 </div>
               </div>
             </div>
@@ -48,8 +48,8 @@ const Hero = () => {
           
           <div className="flex-1 text-center lg:text-left">
             <div className="mb-6">
-              <div className="text-lg font-bold text-gray-700 mb-2">स्किम काम सेवा</div>
-              <div className="text-2xl font-bold text-gray-700 mb-4">जागिर पोस्ट संख्या※</div>
+              <div className="text-lg font-bold text-gray-700 mb-2">Job Matching Service</div>
+              <div className="text-2xl font-bold text-gray-700 mb-4">Job Posts Number※</div>
               <div className="text-8xl md:text-9xl font-black text-gray-800 leading-none">No.1</div>
             </div>
             
@@ -63,16 +63,16 @@ const Hero = () => {
             </div>
             
             <Link to="/registration" className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg font-bold inline-block transition-colors">
-              जागिर पोस्ट नि:शुल्क! काम भर्तीको लागि यहाँ क्लिक गर्नुहोस्
+              Free Job Posting! Click Here for Recruitment
             </Link>
           </div>
         </div>
         
         {/* Bottom disclaimer */}
         <div className="mt-16 text-center text-sm text-gray-600">
-          ※२०२५ जुन अवधि_स्किम काम मा बजार अनुसन्धान<br/>
-          अनुसन्धान संस्था: नेपाल मार्केटिंग रिसर्च संघ<br/>
-          अनुसन्धान अवधि: २०२५ मे १३ देखि जुन १२ सम्म
+          ※June 2025 Period Market Research<br/>
+          Research Institute: Nepal Marketing Research Association<br/>
+          Research Period: May 13 to June 12, 2025
         </div>
       </div>
     </section>
